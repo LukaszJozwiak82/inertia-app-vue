@@ -11,7 +11,7 @@ class IndexController extends Controller
      */
     public function index()
     {
-        return inertia('Index/Index');
+        return inertia('Index/Index', ['message' => 'Message from world']);
     }
 
     /**

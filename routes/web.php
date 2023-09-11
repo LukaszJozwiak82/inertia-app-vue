@@ -15,4 +15,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [\App\Http\Controllers\IndexController::class, 'index']);
 Route::get('/hello', [\App\Http\Controllers\IndexController::class, 'show']);
-Route::resource('listing', \App\Http\Controllers\ListingController::class)->only(['index', 'show']);
+Route::resource('listing', \App\Http\Controllers\ListingController::class)->only(['index', 'show', 'create', 'store']);
